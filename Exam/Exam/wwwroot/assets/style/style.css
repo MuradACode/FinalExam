@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navSection {
+  background-color: black;
+}
+.navSection .navTitle {
+  color: white;
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+
+.heroSection {
+  padding-top: 6rem;
+  background-color: rgb(0, 132, 150);
+  height: 38rem;
+  text-align: center;
+}
+.heroSection .textDiv {
+  text-align: center;
+}
+.heroSection .textDiv h2,
+.heroSection .textDiv h4,
+.heroSection .textDiv h5 {
+  color: white;
+}
+.heroSection .textDiv .textTitle {
+  font-size: 5.2rem;
+}
+.heroSection .textDiv .textSubtitle {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+.heroSection .buttonDiv button {
+  margin-top: 1.6rem;
+  justify-self: center;
+  color: white;
+  font-weight: 500;
+  padding: 0.6rem;
+  border-radius: 0.1rem;
+  background-color: rgb(241, 36, 88);
+  transition: none;
+}
+.heroSection .buttonDiv button:hover {
+  background-color: rgb(226, 34, 34);
+}
+
+.featureSection {
+  padding-top: 10rem;
+  width: 60vw;
+}
+.featureSection h2 {
+  color: rgb(0, 132, 150);
+  font-size: 2.5rem;
+}
+.featureSection .serviceDiv {
+  padding-top: 2rem;
+}
+.featureSection .serviceDiv .serviceCard {
+  margin-right: 7rem;
+}
+.featureSection .serviceDiv .serviceTitle {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.featureSection .serviceDiv .serviceDesc {
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+.featureSection .cardDiv {
+  padding-top: 3rem;
+}
+.featureSection .cardDiv .featureCard {
+  text-align: center;
+  background-color: rgb(0, 132, 150);
+  width: 22rem;
+}
+.featureSection .cardDiv .featureCard i,
+.featureSection .cardDiv .featureCard h3,
+.featureSection .cardDiv .featureCard p {
+  color: white;
+}
+.featureSection .cardDiv .featureCard i {
+  font-size: 5rem;
+  padding: 2rem 0;
+}
+.featureSection .cardDiv .featureCard h3 {
+  font-size: 1.5rem;
+}
+.featureSection .cardDiv .featureCard p {
+  font-size: 1.1rem;
+}
+.featureSection .description {
+  font-size: 0.94rem;
+}
+
+.achivementsTop {
+  margin-top: 6rem;
+  background-color: rgb(0, 132, 150);
+}
+.achivementsTop .achivementsDiv {
+  width: 50vw;
+  padding: 3rem 0;
+}
+.achivementsTop .achivementsDiv .achivementText,
+.achivementsTop .achivementsDiv .achivementNumbers {
+  text-align: center;
+}
+.achivementsTop .achivementsDiv .achivementText h2,
+.achivementsTop .achivementsDiv .achivementNumbers h2 {
+  font-size: 3.8rem;
+  color: white;
+}
+.achivementsTop .achivementsDiv .achivementText h5,
+.achivementsTop .achivementsDiv .achivementNumbers h5 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.achivementsBottom {
+  margin-top: 6rem;
+  background-color: rgb(0, 132, 150);
+}
+.achivementsBottom .achivementsDiv {
+  width: 60vw;
+  padding: 3rem 0;
+}
+.achivementsBottom .achivementsDiv .achivementText,
+.achivementsBottom .achivementsDiv .achivementNumbers {
+  text-align: center;
+}
+.achivementsBottom .achivementsDiv .achivementText h2,
+.achivementsBottom .achivementsDiv .achivementNumbers h2 {
+  font-size: 3.8rem;
+  color: white;
+}
+.achivementsBottom .achivementsDiv .achivementText h5,
+.achivementsBottom .achivementsDiv .achivementNumbers h5 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.contactSection {
+  width: 60vw;
+  padding-top: 10rem;
+}
+.contactSection h2 {
+  color: rgb(0, 132, 150);
+  font-size: 2.5rem;
+}
+.contactSection .contactCard {
+  margin-right: 7rem;
+}
+.contactSection .contactTitle {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.contactSection .contactDesc {
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+.contactSection form .contactSubmitButton {
+  width: 10rem;
+  background-color: rgb(47, 108, 221);
+  color: white;
+  transition: none;
+}
+.contactSection form .contactSubmitButton:hover {
+  background-color: rgb(38, 80, 160);
+}
+.contactSection .contactAdress {
+  font-size: 0.9rem;
+}
+
+footer {
+  margin-top: 5rem;
+  background-color: black;
+  height: 3.5rem;
+}
+footer section {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 3.5rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+footer section p {
+  color: white;
+}/*# sourceMappingURL=style.css.map */

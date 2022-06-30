@@ -1,0 +1,155 @@
+﻿@model HomeVM
+
+<section class="container-fluid heroSection">
+    @foreach(Hero hero in Model.Hero)
+    {
+        <div class="textDiv">
+                <h2 class="textTitle">@hero.Title</h2>
+                <h4 class="textSubtitle">@hero.Subtitle</h4>
+                <h5>@hero.Description</h5>
+            </div>
+    }
+            <div class="buttonDiv">
+                <button type="button" class="btn">DOWNLOAD THIS TEMPLATE NOW !</button>
+            </div>
+        </section>
+        <section class="container featureSection">
+            <h2>OUR SERVICES :</h2>
+            <div class="row serviceDiv">
+                <div class="col-lg-5 col-md-12 serviceCard">
+                    <h5 class="serviceTitle">Lorem ipsum dolor sit amet</h5>
+                    <p class="serviceDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl
+                        odio. Mauris vehicula
+                        at nunc id posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl
+                        odio. Mauris vehicula at nunc id posuere.</p>
+                </div>
+                <div class="col-lg-5 col-md-12 ">
+                    <h5 class="serviceTitle">Lorem ipsum dolor sit amet</h5>
+                    <p class="serviceDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl
+                        odio. Mauris vehicula
+                        at nunc id posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl
+                        odio. Mauris vehicula at nunc id posuere.</p>
+                </div>
+            </div>
+            <div class="row cardDiv">
+
+               @for (var i = 0; i < Model.Features.Count; i++)
+               {
+                   
+                @if (i == 2)
+               {
+                   <div class="col-lg-4 col-md-12 featureCard mb-3">
+                    <i class="fa-solid fa-display"></i>
+                    <h3>Sure Quique Menu</h3>
+                    <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio.
+                        Mauris vehicula
+                        at nunc id posuere.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            }
+            else
+            {
+                <div class="col-lg-4 col-md-12 featureCard me-5 mb-3">
+                    <i class="@Model.Features[1].Icon"></i>
+                    <h3>@Model.Features[1].Title</h3>
+                    <p class="py-3">@Model.Features[1].Desc1</p>
+                    <p>@Model.Features[1].Desc2</p>
+                </div>
+            }
+        }
+
+            </div>
+            <div class="pt-5">
+                <h3 class="pb-3 fw-normal">Lorem ipsum dolor sit amet</h3>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio.
+                    Mauris vehicula at
+                    nunc id posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio.
+                    Mauris vehicula at nunc id posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur nec nisl odio. Mauris vehicula at nunc id posuere. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at
+                    nunc id posuere.</p>
+            </div>
+        </section>
+        <section class="achivementsTop container-fluid">
+            <div class="container achivementsDiv">
+                <div class="row">
+                    
+                    @foreach (AchivementTop achivement in Model.TopAchivements)
+                   {
+                       @if (achivement.IsSmall)
+                       {
+                           <div class="col-lg-3 col-md-12 achivementNumbers">
+                        <h2>@achivement.Title</h2>
+                        <h5>@achivement.Subtitle</h5>
+                    </div>
+                            }
+                            else
+                            {
+                                <div class="col-lg-9 col-md-12 achivementText">
+                        <h2>@achivement.Title</h2>
+                        <h5>@achivement.Subtitle</h5>
+                    </div>
+                            }
+                        }
+
+                </div>
+            </div>
+        </section>
+        <section class="achivementsBottom container-fluid">
+            <div class="container achivementsDiv">
+                <div class="row">
+
+                    @foreach (AchivementBottom achivementBottom in Model.BottomAchivements)
+                   {
+                       <div class="col-lg-3 col-md-12 achivementText">
+                        <h2>@achivementBottom.Title</h2>
+                        <h5>@achivementBottom.Subtitle</h5>
+                    </div>
+                   }
+
+                </div>
+            </div>
+        </section>
+        <section class="container contactSection">
+            <h2>CONTACT US :</h2>
+            <div class="row mt-5">
+
+                @foreach (Contact contact in Model.Contacts)
+                {
+                    <div class="col-lg-5 col-md-12 contactCard">
+                    <h5 class="contactTitle">@contact.Title</h5>
+                    <p class="contactDesc">@contact.Subtitle</p>
+                </div>
+                }
+
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-6 col-md-12">
+                    <form>
+                        <div class="row">
+                            <input class="col-4 me-5" type="text" placeholder="name">
+                            <input class="col-4" type="email" placeholder="Email address">
+                        </div>
+                        <div class="row">
+                            <textarea placeholder="Message" class="col-9 mt-3" cols="60" rows="3"></textarea>
+                        </div>
+                        <div class="row">
+                            <button type="submit" class="btn p-1 px-3 mt-3 contactSubmitButton">Submit Request</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-5 col-md-12 ms-3 mt-4">
+                    
+                    @foreach (ContactAddress address in Model.ContactAddresses)
+                    {
+                        <div class="contactAdress">
+                        <span class="fw-bold">@address.Title: </span>
+                        <span>@address.Address</span>
+                    </div>
+                    }
+
+                </div>
+            </div>
+        </section>
