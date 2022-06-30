@@ -16,5 +16,6 @@ namespace DAL.Data
         public DbSet<AchivementBottom> BottomAchivements { get; set; }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<ContactAddress> ContactAddresses { get; set; }
+        public DbSet<Settings> Settings { get; set; }
     }
 }

@@ -1,0 +1,44 @@
+﻿@model List<Settings>
+
+<section class="container">
+        <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Features</h4>
+<div class="d-flex justify-content-between">
+    <a class="btn btn-primary" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Go Back</a>
+    <a class="btn btn-success" asp-area="Admin" asp-controller="Settings" asp-action="Create">Create</a>
+</div>
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>
+                            Title
+                          </th>
+                          <th>
+                            Settings
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        
+                          @foreach (Settings setting in Model)
+                         {
+                             <tr>
+                          <td class="py-1">
+                            @setting.Key
+                          </td>
+                          <td>
+    <a class="btn btn-primary" asp-area="Admin" asp-controller="Settings" asp-action="Details" asp-route-id="@setting.Id">Details</a>
+    <a class="btn btn-warning" asp-area="Admin" asp-controller="Settings" asp-action="Update" asp-route-id="@setting.Id">Update</a>
+    <a class="btn btn-danger" asp-area="Admin" asp-controller="Settings" asp-action="Delete" asp-route-id="@setting.Id">Delete</a>
+                          </td>
+                        </tr>
+                         }
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+</section>

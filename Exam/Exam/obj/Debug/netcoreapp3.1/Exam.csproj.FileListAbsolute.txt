@@ -161,3 +161,14 @@ C:\Users\Administrator\source\repos\Exam\Exam\obj\Debug\netcoreapp3.1\Razor\Area
 C:\Users\Administrator\source\repos\Exam\Exam\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Feature\Delete.cshtml.g.cs
 C:\Users\Administrator\source\repos\Exam\Exam\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\Administrator\source\repos\Exam\Exam\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Administrator\source\repos\Exam\Exam\bin\Debug\netcoreapp3.1\Services.deps.json
+C:\Users\Administrator\source\repos\Exam\Exam\bin\Debug\netcoreapp3.1\Services.runtimeconfig.json
+C:\Users\Administrator\source\repos\Exam\Exam\bin\Debug\netcoreapp3.1\Services.runtimeconfig.dev.json
+C:\Users\Administrator\source\repos\Exam\Exam\bin\Debug\netcoreapp3.1\Services.exe
+C:\Users\Administrator\source\repos\Exam\Exam\bin\Debug\netcoreapp3.1\Services.dll
+C:\Users\Administrator\source\repos\Exam\Exam\bin\Debug\netcoreapp3.1\Services.pdb
+C:\Users\Administrator\source\repos\Exam\Exam\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Settings\Create.cshtml.g.cs
+C:\Users\Administrator\source\repos\Exam\Exam\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Settings\Delete.cshtml.g.cs
+C:\Users\Administrator\source\repos\Exam\Exam\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Settings\Details.cshtml.g.cs
+C:\Users\Administrator\source\repos\Exam\Exam\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Settings\Index.cshtml.g.cs
+C:\Users\Administrator\source\repos\Exam\Exam\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Settings\Update.cshtml.g.cs

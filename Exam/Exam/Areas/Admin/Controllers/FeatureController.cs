@@ -62,7 +62,7 @@ namespace Exam.Areas.Admin.Controllers
 
             feature.CreatedDate = DateTime.Now;
 
-            await _context.AddAsync(feature);
+            await _context.Features.AddAsync(feature);
             await _context.SaveChangesAsync();
 
             return RedirectToAction(controllerName: nameof(Feature), actionName: nameof(Index));
@@ -137,7 +137,7 @@ namespace Exam.Areas.Admin.Controllers
 
             if (feature.Title is null)
             {
-                ModelState.AddModelError("", "Fiaeld is empty");
+                ModelState.AddModelError("", "Field is empty");
                 return View(dbFeature);
             }
 
