@@ -1,0 +1,44 @@
+﻿@model List<Feature>
+
+<section class="container">
+        <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Features</h4>
+<div class="d-flex justify-content-between">
+    <a class="btn btn-primary" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Go Back</a>
+    <a class="btn btn-success" asp-area="Admin" asp-controller="Feature" asp-action="Create">Create</a>
+</div>
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>
+                            Title
+                          </th>
+                          <th>
+                            Settings
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        
+                          @foreach (Feature feature in Model)
+                         {
+                             <tr>
+                          <td class="py-1">
+                            @feature.Title
+                          </td>
+                          <td>
+    <a class="btn btn-primary" asp-area="Admin" asp-controller="Feature" asp-action="Details" asp-route-id="@feature.Id">Details</a>
+    <a class="btn btn-warning" asp-area="Admin" asp-controller="Feature" asp-action="Update" asp-route-id="@feature.Id">Update</a>
+    <a class="btn btn-danger" asp-area="Admin" asp-controller="Feature" asp-action="Delete" asp-route-id="@feature.Id">Delete</a>
+                          </td>
+                        </tr>
+                         }
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+</section>

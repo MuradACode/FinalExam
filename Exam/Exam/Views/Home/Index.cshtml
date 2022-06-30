@@ -39,21 +39,19 @@
                 @if (i == 2)
                {
                    <div class="col-lg-4 col-md-12 featureCard mb-3">
-                    <i class="fa-solid fa-display"></i>
-                    <h3>Sure Quique Menu</h3>
-                    <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio.
-                        Mauris vehicula
-                        at nunc id posuere.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <i class="@Model.Features[i].Icon"></i>
+                    <h3>@Model.Features[i].Title</h3>
+                    <p class="py-3">@Model.Features[i].Desc1</p>
+                    <p>@Model.Features[i].Desc2</p>
                 </div>
             }
             else
             {
                 <div class="col-lg-4 col-md-12 featureCard me-5 mb-3">
-                    <i class="@Model.Features[1].Icon"></i>
-                    <h3>@Model.Features[1].Title</h3>
-                    <p class="py-3">@Model.Features[1].Desc1</p>
-                    <p>@Model.Features[1].Desc2</p>
+                    <i class="@Model.Features[i].Icon"></i>
+                    <h3>@Model.Features[i].Title</h3>
+                    <p class="py-3">@Model.Features[i].Desc1</p>
+                    <p>@Model.Features[i].Desc2</p>
                 </div>
             }
         }

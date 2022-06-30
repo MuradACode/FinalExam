@@ -166,7 +166,7 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">
               <i class="mdi mdi-home menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
@@ -185,9 +185,9 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/forms/basic_elements.html">
+            <a class="nav-link" asp-area="Admin" asp-controller="Feature" asp-action="Index">
               <i class="mdi mdi-view-headline menu-icon"></i>
-              <span class="menu-title">Form elements</span>
+              <span class="menu-title">Features</span>
             </a>
           </li>
           <li class="nav-item">
@@ -271,6 +271,8 @@
   <script src="~/areas/admin/js/data-table.js"></script>
   <script src="~/areas/admin/js/jquery.dataTables.js"></script>
   <script src="~/areas/admin/js/dataTables.bootstrap4.js"></script>
+  <script src="https://kit.fontawesome.com/2ccc015245.js" crossorigin="anonymous"></script>
+
   <!-- End custom js for this page-->
 </body>
 

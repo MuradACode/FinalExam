@@ -154,3 +154,10 @@ C:\Users\Administrator\source\repos\Exam\Exam\obj\Debug\netcoreapp3.1\Razor\Area
 C:\Users\Administrator\source\repos\Exam\Exam\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_AdminLayout.cshtml.g.cs
 C:\Users\Administrator\source\repos\Exam\Exam\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
 C:\Users\Administrator\source\repos\Exam\Exam\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
+C:\Users\Administrator\source\repos\Exam\Exam\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Feature\Index.cshtml.g.cs
+C:\Users\Administrator\source\repos\Exam\Exam\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Feature\Details.cshtml.g.cs
+C:\Users\Administrator\source\repos\Exam\Exam\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Feature\Create.cshtml.g.cs
+C:\Users\Administrator\source\repos\Exam\Exam\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Feature\Update.cshtml.g.cs
+C:\Users\Administrator\source\repos\Exam\Exam\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Feature\Delete.cshtml.g.cs
+C:\Users\Administrator\source\repos\Exam\Exam\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Administrator\source\repos\Exam\Exam\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs

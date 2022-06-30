@@ -1,7 +1,9 @@
 using DAL.Data;
+using DAL.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -33,6 +35,15 @@ namespace Exam
                 });
             });
 
+            services.AddIdentity<AppUser, IdentityRole>(options =>
+            {
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
+                options.Password.RequireNonAlphanumeric = false;
+                options.User.RequireUniqueEmail = true;
+            })
+                .AddDefaultTokenProviders()
+                .AddEntityFrameworkStores<AppDbContext>();
+
             services.AddControllersWithViews();
         }
 
@@ -52,6 +63,7 @@ namespace Exam
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

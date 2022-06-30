@@ -1,0 +1,19 @@
+﻿@model Feature
+
+<section class="container">
+    <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Feature - Create</h4>
+                  <form method="post" class="forms-sample">
+                    <div class="form-group">
+                      <label asp-for="Title">Please type title name to confirm deleting: <span class="text-danger">@Model.Title</span></label>
+                      <input asp-for="Title" value="" class="form-control">
+                      <span class="text-danger" asp-validation-for="Title"></span>
+                    </div>
+                    <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                    <a class="btn btn-light" asp-area="Admin" asp-controller="Feature" asp-action="Index">Cancel</a>
+                  </form>
+                </div>
+              </div>
+</section>
